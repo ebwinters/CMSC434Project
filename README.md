@@ -10,8 +10,17 @@
 - Each tab is 4 spaces
 ### Styles
 #### Fonts
+- Verdana family
 #### Sizing
+- When adjusting font size using CSS, we will use the following scale:
+    - XS: 6px
+    - S: 8px
+    - M: 11px
+    - L: 14px
+    - XL: 18px
 #### Colors
+- Here is the pallette we are using: https://coolors.co/e8f1f2-000000-ea2e2e-f9e572-000000
+- Background light, text dark, red primary, yellow secondary
 ### Merging
 ### Naming
 
@@ -51,3 +60,5 @@ Notice the CSS grid stylesheet is included in the file. This is because we will 
 
 6. In the visitor folder of the css folder in the project create a file called `faq.css`
 7. In the visitor folder of the js folder in the project create a file called `faq.js`
+
+## Using our custom grid layout in your feature
