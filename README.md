@@ -21,13 +21,24 @@
 #### Colors
 - Here is the pallette we are using: https://coolors.co/e8f1f2-000000-ea2e2e-f9e572-000000
 - Background light, text dark, red primary, yellow secondary
-### Merging
+#### Github
+- Be sure you are making commits on your local branch every time you write any block of code over 10 lines
+- Make commit messages one sentence but be descriptive of what you are commiting
+- Be sure to push to Github after working on your code. This ensures you have a backup of your work
+### Merging a feature
+Once you are done working on your feature, inside of your separate branch, you need to merge it into the master branch so everyone else can pull the changes and work with the updated website. To do this:
+1. Make sure you have pushed everything to your branch, so when you type `git status` the terminal says "everything is up to date"
+2. `git checkout master`
+3. `git pull`
+4. `git merge branch_name`
 ### Naming
+- Homescreen and visitor/student/faculty screens will be called `homescreen`, `visitor_home`, `student_home`, and `faculty_home` respectively
+- Feature pages and css/js files associated with the feature page should be named according to your feature. For example, for the "book a study space" feature, the landing page where you select to look at open rooms or book a room could be called "studyspace_home", and the page where you view the open rooms could be called "open_room", and booking a room could be "book_room".
 
 ## Adding a new page for your feature
 Notice that the homepage has `<a>` tags as the routing mechanism. 
 Now, for example, say I want to add the FAQ page for visitors. I would do the following:
-1. Find the file under the pages folder for the visitor homescreen (see naming conventions section to know which file this is)
+1. Find the file under the pages folder for the visitor screen (see naming conventions section to know which file this is)
 2. Find the `<a>` tag with the placeholder text for the FAQ feature. Should look like:
 ```html
 <a>FAQ</a>
