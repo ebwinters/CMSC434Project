@@ -17,7 +17,8 @@
     - S: 8px
     - M: 11px
     - L: 14px
-    - XL: 18px
+    - XL: 35px
+    - Title: 50px
 #### Colors
 - Here is the pallette we are using: https://coolors.co/e8f1f2-000000-ea2e2e-f9e572-000000
 - Background light, text dark, red primary, yellow secondary
