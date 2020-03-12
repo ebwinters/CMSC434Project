@@ -4,10 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Today's Date</title>
+    <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/homepage.css">
 </head>
 
 <body>
+    <h1 class="page-heading">I am a...</h1>
+    <div class="grid-container">
+        <div class="item-a" onclick="selectChoice(this, 'index.html')">
+            <h1>Student</h1>
+        </div>
+        <div class="item-b" onclick="selectChoice(this, 'index.html')">
+            <h1>Visitor</h1>
+        </div>
+        <div class="item-c" onclick="selectChoice(this, 'index.html')">
+            <h1>Faculty Member</h1>
+        </div>
+    </div>
 </body>
 
 <script src="js/homepage.js"></script>
