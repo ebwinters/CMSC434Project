@@ -57,14 +57,14 @@ Now, for example, say I want to add the FAQ page for visitors. I would do the fo
 <head>
     <meta charset="UTF-8">
     <title>Template Page</title>
-    <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/visitor/faq.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/visitor/faq.css">
 </head>
 
 <body>
 </body>
 
-<script src="js/visitor/faq.js"></script>
+<script src="../js/visitor/faq.js"></script>
 
 </html>
 ```
