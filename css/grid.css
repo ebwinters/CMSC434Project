@@ -15,8 +15,8 @@ body {
 
     grid-template-columns: repeat(4, 25% [col-start]);
     grid-template-rows: repeat(auto-fill, 1fr [row-start]);
-    grid-row-gap: 1em;
-    grid-column-gap: 1em;
+    grid-row-gap: 2em;
+    grid-column-gap: 2em;
 
     justify-items: stretch;
     text-align: center;
