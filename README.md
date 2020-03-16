@@ -65,6 +65,7 @@ Now, for example, say I want to add the FAQ page for visitors. I would do the fo
 </body>
 
 <script src="../js/visitor/faq.js"></script>
+<script src="../js/general_functions.js"></script>
 
 </html>
 ```
