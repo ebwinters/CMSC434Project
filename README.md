@@ -5,6 +5,7 @@
 1. Make a fork of the repo ![info on that here](https://help.github.com/en/enterprise/2.13/user/articles/fork-a-repo)
 2. Write your code
 3. Make a pull request
+** always before you start coding, in your terminal in the folder of the project, type `git fetch  && git pull` to get the most current changes`
 ### Making a custom branch
 1. In the folder you just cloned, enter the command `git checkout -b my_new_branch` but instead of "my_new_branch" make the branch name the name of the feature you are making. i.e. `home_page`. 
 ## Standards
