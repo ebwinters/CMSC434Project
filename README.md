@@ -1,8 +1,10 @@
 # CMSC434Project
 
 ## Getting started
-### Cloning the repository
-1. `git clone https://github.com/ebwinters/CMSC434Project.git`
+### Getting the repo and contributing to the source
+1. Make a fork of the repo ![info on that here](https://help.github.com/en/enterprise/2.13/user/articles/fork-a-repo)
+2. Write your code
+3. Make a pull request
 ### Making a custom branch
 1. In the folder you just cloned, enter the command `git checkout -b my_new_branch` but instead of "my_new_branch" make the branch name the name of the feature you are making. i.e. `home_page`. 
 ## Standards
