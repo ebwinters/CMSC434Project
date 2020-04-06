@@ -10,8 +10,6 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: [col1-start] 50% [col2-start] 50%;
-    grid-template-rows: 10% [header] [row1-start] 30% [row2-start] 30% [row3-start] 30%;
 
     grid-template-columns: repeat(4, 25% [col-start]);
     grid-template-rows: repeat(auto-fill, 1fr [row-start]);
