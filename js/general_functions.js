@@ -7,5 +7,6 @@ function selectChoice(div, pageName) {
     div.style.background="#f9e572";
     setTimeout(function() {
         window.location.href=pageName;
+        div.style.background="none";
     }, 75); 
 }
