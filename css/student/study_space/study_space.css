@@ -2,7 +2,6 @@ body {
     background-color: #e8f1f2;
 }
 
-
 .item-a {
     grid-column-start: 1;
     grid-column-end: 5;
