@@ -8,14 +8,56 @@
     <link rel="stylesheet" href="../../../css/student/study_space/study_space.css">
 </head>
 
+
 <body>
 	<h1 class="page-heading">Reserve a Room</h1>
 	<div class="grid-container">
-		<div class="item-a" onclick="selectChoice(this, 'study_0101.html')">
-			<h1>0101</h1>
+		<div class="item-a">
+			<h2>Date:</h2>
+			<select id="date">
+				<option value="sunday">12 April 2020</option>
+				<option value="monday">13 April 2020</option>
+				<option value="tuesday">14 April 2020</option>
+				<option value="wednesday">15 April 2020</option>
+				<option value="thursday">16 April 2020</option>
+				<option value="friday">17 April 2020</option>
+				<option value="saturday">18 April 2020</option>
+			</select>
 		</div>
-		<div class="item-b" onclick="selectChoice( this, '../student_home.html')">
+		<div class="item-b">
+			<h2>Time:</h2>
+			<input type="checkbox" id="0700">
+			<lable for="0700">7:00-8:00 AM</lable>
+			<input type="checkbox" id="0800">
+			<lable for="0800">8:00-9:00 AM</lable>
+			<input type="checkbox" id="0900">
+			<lable for="0900">9:00-10:00 AM</lable>
+			<input type="checkbox" id="1000">
+			<lable for="1000">10:00-11:00 AM</lable>
+			<input type="checkbox" id="1100">
+			<lable for="1100">11:00-12:00 PM</lable>
+			<input type="checkbox" id="1200">
+			<lable for="1200">12:00-1:00 PM</lable>
+			<input type="checkbox" id="1300">
+			<lable for="1300">1:00-2:00 PM</lable>
+			<input type="checkbox" id="1400">
+			<lable for="1400">2:00-3:00 PM</lable>
+			<input type="checkbox" id="1500">
+			<lable for="1500">3:00-4:00 PM</lable>
+			<input type="checkbox" id="1600">
+			<lable for="1600">4:00-5:00 PM</lable>
+			<input type="checkbox" id="1700">
+			<lable for="1700">5:00-6:00 PM</lable>
+			<input type="checkbox" id="1800">
+			<lable for="1800">6:00-7:00 PM</lable>
+			<input type="checkbox" id="1900">
+			<lable for="1900">7:00-8:00 PM</lable>
+		</div>
+		<div class="item-c" onclick="selectChoice( this, '../student_home.html')">
             <h2>Back</h2>
+        </div>
+        <div class="item-d" onclick="selectChoice(this, 'available_rooms.html')">
+        	<h2>Find available rooms</h2>
         </div>
 	</div>
 </body>
