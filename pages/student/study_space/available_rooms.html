@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="eng-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Today's Date</title>
+    <link rel="stylesheet" href="../../../css/grid.css">
+    <link rel="stylesheet" href="../../../css/student/study_space/available_rooms.css">
+</head>
+
+
+<body>
+	<h1 class="page-heading">Available Rooms</h1>
+	<div class="grid-container">
+		<div class="item-a">
+			<h2>Select a Room</h2>
+			<select id="room">
+				<option value="r0101">0101</option>
+				<option value="r0102">0102</option>
+				<option value="r0103">0103</option>
+				<option value="r0104">0104</option>
+			</select>
+		</div>
+		<div class="item-b" onclick="selectChoice(this, 'study_space.html')">
+			<h2>Back</h2>
+		</div>
+		<div class="item-c" onclick="selectChoice(this, 'reserve_confirmation.html')">
+			<h2>Book Room</h2>
+
+		</div>
+	</div>
+</body>
+
+
+<script src="../../../js/student/study_space.js"></script>
+<script src="../../../js/general_functions.js"></script>
+
+</html>
