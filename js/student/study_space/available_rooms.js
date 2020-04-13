@@ -57,18 +57,19 @@ function getAvailableRooms() {
     var taken = [];
     let roomsString = "";
     const cookies = getTakenRoomCookieData();
+    // console.log(cookies);
     for (var i = 0; i < cookies.length; i++) {
         if (cookies[i].date === dateArg && cookies[i].time === timeArg) {
             taken.push(cookies[i].room);
         }
     }
-    console.log(taken);
+    // console.log(taken);
     rooms.filter((room) => taken.indexOf(room) === -1).map((room) => roomsString += createOption(room));
-    return roomsString; //rooms map filtered to create room string options and return
+    return roomsString;
 }
 
 function createOption(value) {
-    return `<option value="r${value}">${value}</option>`
+    return `<option value="${value}">${value}</option>`
 }
 
 function setSelectText() {
@@ -79,6 +80,30 @@ function setSelectText() {
 function loadPage() {
     fillRoomsDropdown();
     setSelectText();
+}
+
+function bookRoom(self, pageName) {
+    const e = document.getElementById("room");
+    var roomValue = e.options[e.selectedIndex].value;
+    const cookieName = "takenRooms=";
+    // cookie format: datestring,timestring,room#...
+    const decodedCookie = decodeURIComponent(document.cookie).split(';');
+    let keycookie = "";
+    for (var i = 0; i < decodedCookie.length; i++) {
+        var cookie = decodedCookie[i];
+        while (cookie.charAt(0) == ' ') {
+            cookie = cookie.substring(1);
+        }
+        if (cookie.indexOf(cookieName) == 0) {
+            keycookie = cookie;
+            break;
+        }
+    }
+    keycookie += `#${dateArg},${timeArg},${roomValue}`;
+    document.cookie = 'takenRooms=' + keycookie;
+    setTimeout(function() {
+        window.location.href=pageName;
+    }, 1000); 
 }
 
 window.onload = loadPage()
