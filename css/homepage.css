@@ -31,6 +31,7 @@ body {
    grid-row-end: 4;
    border-style: solid;
    border-radius: 5px;
+   background-color: #f9e572;
 }
 
 .item-e {
@@ -40,4 +41,25 @@ body {
     grid-row-end: 4;
     border-style: solid;
     border-radius: 5px;
+    background-color: #f9e572;
+}
+
+.item-f {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #f9e572;
+}
+
+.item-g {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #f9e572;
 }

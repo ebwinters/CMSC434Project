@@ -25,6 +25,15 @@
     border-radius: 5px;
 }
 
+.item-d {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-style: solid;
+    border-radius: 5px;
+}
+
 .map {
     width: 45%;
 }
