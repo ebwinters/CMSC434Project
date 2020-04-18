@@ -1,0 +1,147 @@
+#roomnum {
+    height:100px;
+    font-size:xx-large;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+#gobtn {
+    background-color: #f9e572
+}
+
+.num-btn {
+    height: 50px;
+    align-content: center;
+    display: grid;
+}
+
+.item-a {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.item-b {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.item-c {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.item-d {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.item-e {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.item-f {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.item-g {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.item-h {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.item-i {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.item-j {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.item-k {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.item-l {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.item-m {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.item-n {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+body {
+    background-color: #e8f1f2;
+}
