@@ -63,3 +63,43 @@ body {
     border-radius: 5px;
     background-color: #f9e572;
 }
+
+.item-h {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #f9e572;
+}
+
+.item-i {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #f9e572;
+}
+
+.item-j {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #f9e572;
+}
+
+.item-k {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #f9e572;
+}
