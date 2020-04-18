@@ -1,0 +1,34 @@
+.item-a {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-style: solid;
+    border-radius: 3px;
+}
+
+.item-b {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-style: solid;
+    border-radius: 3px;
+}
+
+.item-c {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.map {
+    width: 45%;
+}
+
+body {
+    background-color: #e8f1f2;
+}

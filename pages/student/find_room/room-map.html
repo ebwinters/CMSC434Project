@@ -5,20 +5,28 @@
     <meta charset="UTF-8">
     <title>Find a Room</title>
     <link rel="stylesheet" href="../../../css/grid.css">
-    <link rel="stylesheet" href="../../../css/student/find_room/find_room.css">
+    <link rel="stylesheet" href="../../../css/student/find_room/room_map.css">
 </head>
 
 
 <body>
-    <h1 class="page-heading">Available Rooms</h1>
+    <h1 id="head" class="page-heading">Directions to </h1>
     
 	<div class="grid-container">
-        fuck
+        <div class="item-a">
+            <img class="map" src="../../../img/lower-floor.png">
+        </div>
+        <div class="item-b">
+            <img class="map" src="../../../img/upperfloor.png">
+        </div>
+        <div class="item-c" onclick="selectChoice( this, './find_room.html')">
+            <h2>Back</h2>
+        </div>
 	</div>
 </body>
 
 
-<script src="../../../js/student/find_room/find_room.js"></script>
+<script src="../../../js/student/find_room/room_map.js"></script>
 <script src="../../../js/general_functions.js"></script>
 
 </html>
