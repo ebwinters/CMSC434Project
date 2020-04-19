@@ -1,0 +1,15 @@
+name: Congrats!
+
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Congratulations
+      run: echo Congratualtions! You successfully created a pull request!
