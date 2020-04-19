@@ -10,14 +10,17 @@
 
 
 <body>
-    <h1 id="head" class="page-heading">Directions to </h1>
-    
-	<div class="grid-container">
+    <h1 id="head" style="margin-top: 5px; margin-bottom: 0px;" class="page-heading">Directions to </h1>
+    <p style="text-align: center; margin-top: 0px;">(tap maps to enlarge)</p>
+    <img onclick="restore()" id="exit-btn" class="exit-btn"  src="../../../img/exit.png">
+    <img id="low-hide" class="img-hide"  src="">
+    <img id="up-hide" class="img-hide"  src="">
+	<div id="grid-container" class="grid-container">
         <div class="item-a">
-            <img class="map" src="../../../img/lower-floor.png">
+            <img id="low" onclick="enlarge('lower')" class="map" src="">
         </div>
-        <div class="item-b">
-            <img class="map" src="../../../img/upperfloor.png">
+        <div id="item-b" class="item-b">
+            <img id="up" onclick="enlarge('upper')" class="map" src="">
         </div>
         <div class="item-c" onclick="selectChoice( this, './find_room.html')">
             <h2>Back</h2>

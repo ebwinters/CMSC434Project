@@ -10,10 +10,11 @@
 
 
 <body>
-    <h1 class="page-heading">Enter the room number:</h1>
-    
+    <h1 style="margin-bottom: 0px;" class="page-heading">Available Rooms</h1>
+    <p id="err" class="err">please enter a valid room number</p>
 	<div class="grid-container">
         <input class="item-a" value="" id="roomnum" name="roomnum" disabled>
+        
         <button onclick="findRoomNum('./room-map.html')" id="gobtn" class="item-b" ><img width="75%" src="../../../img/arrow-right.png"></button>
         <div onclick="pressKey(this, 0)" class="item-c num-btn">0</div>
         <div onclick="pressKey(this, 1)" class="item-d num-btn">1</div>
