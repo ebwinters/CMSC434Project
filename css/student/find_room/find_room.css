@@ -142,6 +142,13 @@
     border-radius: 5px;
 }
 
+.err {
+    color: #ea2e2e;
+    text-align: center;
+    margin-top: 0px;
+    display: none;
+}
+
 body {
     background-color: #e8f1f2;
 }
