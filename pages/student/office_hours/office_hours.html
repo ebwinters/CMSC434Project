@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="eng-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Office Hours</title>
+    <link rel="stylesheet" href="../../../css/grid.css">
+    <link rel="stylesheet" href="../../../css/student/office_hours/office_hours.css">
+</head>
+
+
+<body>
+    <h1 style="margin-bottom: 0px; text-align:left" class="page-heading">Enter a CMSC course number:</h1>
+    <p id="err" class="err">please enter a valid CMSC course number</p>
+	<div class="grid-container">
+        <input class="item-a" value="" id="coursenum" name="coursenum" disabled>
+        
+        <button onclick="findCourseNum('./course_info.html')" id="gobtn" class="item-b" ><img width="75%" src="../../../img/arrow-right.png"></button>
+        <div onclick="pressKey(this, 0)" class="item-c num-btn">0</div>
+        <div onclick="pressKey(this, 1)" class="item-d num-btn">1</div>
+        <div onclick="pressKey(this, 2)" class="item-e num-btn">2</div>
+        <div onclick="pressKey(this, 3)" class="item-f num-btn">3</div>
+        <div onclick="pressKey(this, 4)" class="item-g num-btn">4</div>
+        <div onclick="pressKey(this, 5)" class="item-h num-btn">5</div>
+        <div onclick="pressKey(this, 6)" class="item-i num-btn">6</div>
+        <div onclick="pressKey(this, 7)" class="item-j num-btn">7</div>
+        <div onclick="pressKey(this, 8)" class="item-k num-btn">8</div>
+        <div class="item-l num-btn" onclick="selectChoice( this, '../../../index.html')">
+            <h2>Back</h2>
+        </div>
+        <div onclick="pressKey(this, 9)" class="item-m num-btn">9</div>
+        <div onclick="pressKey(this, -1)" class="item-n num-btn">DEL</div>
+	</div>
+</body>
+
+
+<script src="../../../js/student/office_hours/office_hours.js"></script>
+<script src="../../../js/general_functions.js"></script>
+
+</html>
