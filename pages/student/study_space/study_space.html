@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <title>Today's Date</title>
     <link rel="stylesheet" href="../../../css/grid.css">
-    <link rel="stylesheet" href="../../../css/student/study_space/study_space.css">
+	<link rel="stylesheet" href="../../../css/student/study_space/study_space.css">
+	<link href="./js-time-picker/tpick-light.css" rel="stylesheet">
 </head>
 
 
@@ -18,7 +19,10 @@
 			value="2020-04-12">
 		</div>
 		<div class="item-b">
-			<h2>Time:</h2>
+			<h2 style="margin-bottom: 0px;">Starting time:</h2>
+			<p style="margin: 0">(rooms are reserved for <strong>one</strong> hour)</p>
+			<p id="errtxt" style="color: #e8f1f2; margin: 0">(pick a start time between 7am-7pm)</p>
+			<!-- <h2>Time:</h2>
 			<input type="radio" id="0700" name="time" checked="checked">
 			<lable for="0700">7:00-8:00 AM</lable>
 			<input type="radio" id="0800" name="time">
@@ -44,7 +48,8 @@
 			<input type="radio" id="1800" name="time">
 			<lable for="1800">6:00-7:00 PM</lable>
 			<input type="radio" id="1900" name="time">
-			<lable for="1900">7:00-8:00 PM</lable>
+			<lable for="1900">7:00-8:00 PM</lable> -->
+    		<div id="pick-inline"></div>
 		</div>
 		<div class="item-c" onclick="selectChoice( this, '../../../index.html')">
             <h2>Back</h2>
@@ -58,5 +63,7 @@
 
 <script src="../../../js/student/study_space/study_space.js"></script>
 <script src="../../../js/general_functions.js"></script>
+<script src="./js-time-picker/tpick.js"></script>
+
 
 </html>

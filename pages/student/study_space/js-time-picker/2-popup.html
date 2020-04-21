@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Popup Timeicker Example</title>
+    <!-- [1 - LOAD LIBRARIES] -->
+    <link href="tpick-light-pop.css" rel="stylesheet">
+    <script src="tpick-pop.js"></script>
+    <style>
+      html, body { font-family: arial; }
+    </style>
+  </head>
+  <body>
+    <h1>Popup Time Picker</h1>
+
+    <!-- [2 - DEFINE YOUR TEXT INPUT + CONTAINER] -->  
+    <input type="text" id="input-popup"/>
+    <p>Line</p> <p>Line</p> <p>Line</p> <p>Line</p> <p>Line</p> <p>Line</p> <p>Line</p> <p>Line</p>
+    <p>Line</p> <p>Line</p> <p>Line</p> <p>Line</p> <p>Line</p> <p>Line</p> <p>Line</p> <p>Line</p>
+    <p>Line</p> <p>Line</p> <p>Line</p> <p>Line</p> <p>Line</p> <p>Line</p> <p>Line</p> <p>Line</p>
+    <p>Line</p> <p>Line</p> <p>Line</p> <p>Line</p> <p>Line</p> <p>Line</p> <p>Line</p> <p>Line</p>
+
+    <!-- [3 - ATTACH DATE PICKER] -->
+    <script>
+      window.addEventListener("load", function(){
+        // target input
+        tpick.attach("input-popup");
+      });
+    </script>
+  </body>
+</html>

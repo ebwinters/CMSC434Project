@@ -18,6 +18,8 @@ body {
     grid-row-end: 3;
     border-style: solid;
     border-raidus: 5px;
+    text-align: center;
+    display: grid;
 }
 
 .item-c {
@@ -37,4 +39,8 @@ body {
     border-style: solid;
     border-radius: 5px;
 
+}
+
+#pick-inline {
+    justify-self: center;
 }

@@ -18,3 +18,7 @@ body {
     border-style:solid;
     border-radius: 5px;
 }
+
+li {
+    padding-bottom: 3vh;
+}

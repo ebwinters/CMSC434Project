@@ -1,0 +1,45 @@
+/* [CONTAINER] */
+.tpicker {
+  background:transparent;
+  padding: 10px;
+  width: 100%;
+  max-width: 320px;
+  white-space: nowrap;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* [HR + MIN + AM/PM] */
+.tpicker-h, .tpicker-m, .tpicker-ap {
+  display: inline-block;
+  width: 30%;
+}
+.tpicker input[type=text] {
+  box-sizing: border-box;
+  width: 70%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 0;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  font-size: 28px;
+  border-radius: 10px;
+  font-family: Bookman Old Style;   
+}
+.tpicker-up, .tpicker-down {
+  text-align: center;
+  color: #EA2E2E;
+  cursor: pointer;
+}
+
+.tpicker-m .tpicker-up {
+  color: #e8f1f2;
+}
+
+.tpicker-m .tpicker-down {
+  color: #e8f1f2;
+}
+
+
