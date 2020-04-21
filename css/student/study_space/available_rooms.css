@@ -29,3 +29,17 @@ body {
     border-raidus: 5px;
 
 }
+
+#room {
+}
+
+#opt {
+    background-color: #F9E572;
+    border-width: 3px;
+    padding: 1vh 1vw;
+    margin: 5px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    font-size: large;
+}

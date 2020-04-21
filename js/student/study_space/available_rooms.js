@@ -1,5 +1,6 @@
 const hashArgs = window.location.hash.substring(1).split('#');
 const dateArg = hashArgs[0], timeArg = hashArgs[1];
+var roomSelection = "";
 const timeMapping = {
     "0700": "7:00-8:00 AM",
     "0800": "8:00-9:00 AM",
@@ -68,8 +69,13 @@ function getAvailableRooms() {
     return roomsString;
 }
 
+function selectOption(btn) {
+    roomSelection = btn.value;
+    document.getElementById('pickit').innerText = `Book ${btn.value}`
+}
+
 function createOption(value) {
-    return `<option value="${value}">${value}</option>`
+    return `<button onclick="selectOption(this)" id="opt" value="${value}">${value}</button>`
 }
 
 function setSelectText() {
@@ -82,28 +88,30 @@ function loadPage() {
     setSelectText();
 }
 
-function bookRoom(self, pageName) {
-    const e = document.getElementById("room");
-    var roomValue = e.options[e.selectedIndex].value;
-    const cookieName = "takenRooms=";
-    // cookie format: datestring,timestring,room#...
-    const decodedCookie = decodeURIComponent(document.cookie).split(';');
-    let keycookie = "";
-    for (var i = 0; i < decodedCookie.length; i++) {
-        var cookie = decodedCookie[i];
-        while (cookie.charAt(0) == ' ') {
-            cookie = cookie.substring(1);
+function bookRoom(btn, pageName) {
+    if (roomSelection !== "") {
+        btn.style.background="#f9e572";
+        const cookieName = "takenRooms=";
+        // cookie format: datestring,timestring,room#...
+        const decodedCookie = decodeURIComponent(document.cookie).split(';');
+        let keycookie = "";
+        for (var i = 0; i < decodedCookie.length; i++) {
+            var cookie = decodedCookie[i];
+            while (cookie.charAt(0) == ' ') {
+                cookie = cookie.substring(1);
+            }
+            if (cookie.indexOf(cookieName) == 0) {
+                keycookie = cookie;
+                break;
+            }
         }
-        if (cookie.indexOf(cookieName) == 0) {
-            keycookie = cookie;
-            break;
-        }
+        keycookie += `#${dateArg},${timeArg},${roomSelection}`;
+        document.cookie = 'takenRooms=' + keycookie;
+        setTimeout(function() {
+            window.location.href=pageName;
+            btn.style.background="none";
+        }, 200); 
     }
-    keycookie += `#${dateArg},${timeArg},${roomValue}`;
-    document.cookie = 'takenRooms=' + keycookie;
-    setTimeout(function() {
-        window.location.href=pageName;
-    }, 1000); 
 }
 
 window.onload = loadPage()
