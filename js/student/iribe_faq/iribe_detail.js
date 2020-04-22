@@ -33,10 +33,25 @@ function yourfunction() {
             <h1 class="page-heading">About the Michael Antonov Auditorium</h1>
             <h2>
                 <ul>
+                <img src="images/antonov_auditorium.png" 
+                     align = "right"
+                   alt="Antonov Auditorium"
+                  width="320"
+                  height="200"
+                  title="Michael Antonov Auditorium">
                     The auditorium is a perfect environment for technology and science to continue redefining what's possible.
                     The Michael Antonov Auditorium will be the stage for many courses, speaking series and guest lectures.
                     <h1> </h1>
-                     Who is Michael Antonov? \ <small> Michael Antonov is a co-founder and chief software architect at Oculus VR, a company focused on bringing immersive virtual reality to consumers. \
+                     Who is Michael Antonov? \ 
+                     <img src="images/antonov.png" 
+                     align = "left"
+                     hspace="10" 
+                     vspace="5"
+                    alt="Michael Antonov"
+                    width="200"
+                    height="260"
+                    title="A photo of Michael Antonov">
+                     <small> Michael Antonov is a co-founder and chief software architect at Oculus VR, a company focused on bringing immersive virtual reality to consumers. \
                      After graduating from the University of Maryland in 2003 with a bachelor of science degree in computer science, Michael began his career in software \
                      development as co-founder and chief technology officer of Scaleform, which grew to become the #1 user interface technology provider in the video \
                      game market. In March 2011, Scaleform was acquired by Autodesk. Michael co-founded Oculus VR in 2012, where he leads the development of the \
@@ -50,9 +65,16 @@ function yourfunction() {
             <h1 class="page-heading">About Andrew Reisse Park</h1>
             <h2>
                 <ul>
+                <img src="images/reisse_park.png" 
+                     align = "right"
+                   alt="Singh Makerspace"
+                  width="320"
+                  height="200"
+                  title="Jagdeep Singh Family Makerspace">
                     Built in memory of Andrew Reisse ’01, a co-founder and lead engineer of Oculus, the rooftop park features lush gardens and a tranquil fountain, \
                     along with a stunning view of Baltimore Avenue and campus. An adjacent art gallery displays Reisse’s nature photography, offering visitors a \
                     space to reflect and recharge.
+                    
                     <h1> </h1>
                      Who is Andrew Reisse? \ <small> Andrew Reisse was a software developer and co-founder of Oculus VR who passed away in 2013. \
                       Andrew  was  a talented computer graphics engineer and gifted developer and his code is embedded in thousands of games played \
@@ -65,8 +87,14 @@ function yourfunction() {
             pageText = `
             <h1 class="page-heading">About the Jagdeep Singh Family Makerspace</h1>
             <h2>
-                <ul>
-                    With six laboratories surrounded by glass walls, the 5,300-square-foot Singh Sandbox is a makerspace that is sure to become a \
+                <p><ul>
+                    <img src="images/singh_makerspace.png" 
+                     align = "right"
+                   alt="Singh Makerspace"
+                  width="320"
+                  height="200"
+                  title="Jagdeep Singh Family Makerspace">
+                  With six laboratories surrounded by glass walls, the 5,300-square-foot Singh Sandbox is a makerspace that is sure to become a \
                     showplace of inspiring student creations. It is the only makerspace on campus driven by students and the only one where any student, \
                     regardless of major, has access to specialized tools and equipment to work out an idea.
                     <h1> </h1>
@@ -74,14 +102,23 @@ function yourfunction() {
                      Hewlett Packard for a few years, he went on to found several companies including Airsoft, Lightera Networks (sold to CIENA) and Infinera. \
                      After he and his cofounders sold Infinera in 2010, Singh went on to found QuantumScape, a stealth battery start-up in Silicon Valley. \
                      His wife, Roshni, is a practicing physician specializing in palliative care. Together, they have three daughters, Noor, Kismet and Nageena.</small>
-                </ul>   
+                </ul></p>
             </h2>`;
             break;
         case "6":
             pageText = `
             <h1 class="page-heading">Who is Brendan Iribe?</h1>
+
             <h2>
-                <ul>
+                <p><ul>
+                <img src="images/brendan_iribe.png" 
+                     align = "left"
+                     hspace="10" 
+                     vspace="5"
+                   alt="Brendan Iribe"
+                  width="200"
+                  height="260"
+                  title="A photo of Brendan Iribe">
                     <small> Brendan Iribe is one of the video game industry’s most successful serial entrepreneurs and an alumnus of the University of Maryland.\
                      In 2012, he co-founded the virtual reality company Oculus, which Facebook acquired for approximately $2 billion in 2014. Iribe \
                      served as CEO of Oculus until 2016 and then departed the company in 2018. Before Oculus, Iribe served as chief product officer \
@@ -90,7 +127,7 @@ function yourfunction() {
                      provider in the video game market, which Autodesk acquired in 2011. Earlier in his career, Iribe worked as a software programmer, \
                      helping the Firaxis team develop the user interface for the award-winning Civilization IV video game. Iribe attended the University \
                      of Maryland in Fall 1997 and Spring 1998. <small/>
-                </ul>   
+                </ul></p>
             </h2>`;
             break;
     }
