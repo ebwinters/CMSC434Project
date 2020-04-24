@@ -25,7 +25,7 @@ $( document ).ready(function() {
 				currentTurn++;
 			}else {
 				event.target.innerHTML = player2;
-				event.target.style.color = "red";
+				event.target.style.color = "black";
 				currentTurn--;
 			}
 

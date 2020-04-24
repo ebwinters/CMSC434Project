@@ -72,7 +72,7 @@ $( document ).ready(function() {
 
 		setTimeout(() => { 
 			$(".square")[select].innerHTML = player2;
-			$(".square")[select].style.color = "red";
+			$(".square")[select].style.color = "black";
 			currentTurn--;
 
 		if(checkForWinner())
