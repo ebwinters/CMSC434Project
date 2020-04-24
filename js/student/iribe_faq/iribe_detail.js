@@ -36,8 +36,8 @@ function yourfunction() {
                 <img src="images/antonov_auditorium.png" 
                      align = "right"
                    alt="Antonov Auditorium"
-                  width="320"
-                  height="200"
+                  width="220"
+                  height="120"
                   title="Michael Antonov Auditorium">
                     The auditorium is a perfect environment for technology and science to continue redefining what's possible.
                     The Michael Antonov Auditorium will be the stage for many courses, speaking series and guest lectures.
@@ -51,10 +51,10 @@ function yourfunction() {
                     width="200"
                     height="260"
                     title="A photo of Michael Antonov">
-                     <small> Michael Antonov is a co-founder and chief software architect at Oculus VR, a company focused on bringing immersive virtual reality to consumers. \
+                     <small> Michael Antonov is a co-founder and chief software architect at Oculus VR. \
                      After graduating from the University of Maryland in 2003 with a bachelor of science degree in computer science, Michael began his career in software \
                      development as co-founder and chief technology officer of Scaleform, which grew to become the #1 user interface technology provider in the video \
-                     game market. In March 2011, Scaleform was acquired by Autodesk. Michael co-founded Oculus VR in 2012, where he leads the development of the \
+                     game market. Michael co-founded Oculus VR in 2012, where he leads the development of the \
                      Oculus Rift SDK for the PC. Michael Antonov is an expert in complex multi-threaded software architecture, computer graphics, programming \
                      language design and engineering management.</small>
                 </ul>   
@@ -94,9 +94,9 @@ function yourfunction() {
                   width="320"
                   height="200"
                   title="Jagdeep Singh Family Makerspace">
-                  With six laboratories surrounded by glass walls, the 5,300-square-foot Singh Sandbox is a makerspace that is sure to become a \
+                  <small> With six laboratories surrounded by glass walls, the 5,300-square-foot Singh Sandbox is a makerspace that is sure to become a \
                     showplace of inspiring student creations. It is the only makerspace on campus driven by students and the only one where any student, \
-                    regardless of major, has access to specialized tools and equipment to work out an idea.
+                    regardless of major, has access to specialized tools and equipment to work out an idea.</small>
                     <h1> </h1>
                      Who is Jagdeep Singh? \ <small> Jagdeep Singh graduated from the University of Maryland at the age of 19 in 1986. After working at \
                      Hewlett Packard for a few years, he went on to found several companies including Airsoft, Lightera Networks (sold to CIENA) and Infinera. \

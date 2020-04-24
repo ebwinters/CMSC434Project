@@ -1,0 +1,63 @@
+body {
+    background-color: #e8f1f2;
+}
+
+.flex-container{
+	display:flex;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-center {
+	justify-content: center;
+	align-items: center;
+}
+.board-container{
+	height: 100%;
+	width: 100%;
+}
+
+.board {
+	width: 468px;
+	padding: 10px;
+}
+
+.square {
+	width: 125px;
+	height: 125px;
+	border: 3px solid #000000;
+	font-size: 120px;
+}
+
+.square:hover {
+	background-color: #F9E572;
+}
+
+.winner {
+	display: none;
+	font-size: 20px;
+	font-family: Bookman Old Style;   
+	color: #000000;
+}
+
+.item-c {
+
+    border-style:solid;
+    border-radius: 5px;
+    background-color: #F9E572;
+}
+
+.reset {
+    border-style:solid;
+    border-radius: 5px;
+}
+
+.reset:active {
+	background-color: #F9E572;
+}
