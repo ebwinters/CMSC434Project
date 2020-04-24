@@ -16,27 +16,21 @@ $( document ).ready(function() {
 	square.on('click', function(e){
 		if(event.target.innerHTML == ""){
 
-
 			movesMade += 1;
 
-			if(currentTurn == 1){
+			if(currentTurn == 1){ 
 				event.target.innerHTML = player1;
 				event.target.style.color = "red";
 				currentTurn++;
-			}else {
-				event.target.innerHTML = player2;
-				event.target.style.color = "red";
-				currentTurn--;
-			}
 
-			if(checkForWinner()){
-				let theWinner = currentTurn == 1 ? player2 : player1;
-				declareWinner(theWinner);
-			}
-			else
-			{
-				if(movesMade == 9){
-					declareWinner(tie);
+				if(checkForWinner())
+				{
+					let theWinner = currentTurn == 1 ? player2 : player1;
+					declareWinner(theWinner);
+				}
+				else
+				{
+					computerTurn();
 				}
 			}
 		}
@@ -53,12 +47,57 @@ $( document ).ready(function() {
 		movesMade = 0;
 	});
 
+	function computerTurn(){
+		if(movesMade == 9){
+			declareWinner(tie);
+		}
+		else
+		{
+			movesMade += 1;
+		let moves = Array.prototype.slice.call($(".square"));
+			let results = moves.map(function(square){
+				return square.innerHTML;
+			});
+
+		let select = Math.floor(Math.random() * 9);
+		console.log(select);
+		console.log(results[select]);
+		
+		while(results[select] != "")
+		{
+			select = Math.floor(Math.random() * 9)
+		}
+
+		console.log($(".square")[2]);
+
+		setTimeout(() => { 
+			$(".square")[select].innerHTML = player2;
+			$(".square")[select].style.color = "red";
+			currentTurn--;
+
+		if(checkForWinner())
+			{
+				let theWinner = currentTurn == 1 ? player2 : player1;
+				declareWinner(theWinner);
+			}
+			else
+			{
+				if(movesMade == 9){
+					declareWinner(tie);
+				}
+			}
+		} , 1000);
+		
+		}
+	}
+
 	function checkForWinner(){
 		if(movesMade > 4){
 			let moves = Array.prototype.slice.call($(".square"));
 			let results = moves.map(function(square){
 				return square.innerHTML;
 			});
+			console.log(results);
 
 			let winningCombos = [
 				[0, 1, 2],
@@ -72,6 +111,10 @@ $( document ).ready(function() {
 			];
 
 			return winningCombos.find(function(combo){
+				console.log(results[combo[0]]);
+				console.log(results[combo[1]]);
+				console.log(results[combo[2]]);
+				console.log("Moves Made: " + movesMade);
 				if(results[combo[0]] != "" && results[combo[1]] != "" && results[combo[2]] != "" && results[combo[0]] == results[combo[1]] && results[combo[1]] == results[combo[2]]) {
 					return true;
 				} else {
@@ -88,7 +131,7 @@ $( document ).ready(function() {
 		if(winner == tie){
 			winnerContainer.html(tie);
 		}else{
-			winner = winner == player1 ? "Player 1" : "Player 2"
+			winner = winner == player1 ? "Player 1" : "The Computer"
 			winnerContainer.html(winner + " Wins!");
 		}
 	}
