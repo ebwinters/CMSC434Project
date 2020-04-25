@@ -54,7 +54,7 @@ function cleanCookieData(data) {
 }
 
 function getAvailableRooms() {
-    var rooms = ['0101', '0102', '0103', '0104'];
+    var rooms = ['0138', '0324', '1116', '1207', '2107', '2207'];
     var taken = [];
     let roomsString = "";
     const cookies = getTakenRoomCookieData();
