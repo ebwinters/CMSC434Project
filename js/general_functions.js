@@ -4,9 +4,10 @@
  * @param {string} pageName local path to file ex: "index.html"
  */
 function selectChoice(div, pageName) {
+    const background = div.style.background;
     div.style.background="#f9e572";
     setTimeout(function() {
         window.location.href=pageName;
-        div.style.background="none";
+        div.style.background=background;
     }, 75); 
 }
